@@ -222,16 +222,6 @@ metadata:
   # Fails if: missing variables, type errors, broken templates
 ```
 
-## Contributing
-
-```bash
-git clone https://github.com/naveenkumarbaskaran/promptlab.git
-cd promptlab
-python -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"
-pytest
-```
-
 ## License
 
 MIT
