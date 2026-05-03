@@ -4,9 +4,7 @@ from __future__ import annotations
 
 import argparse
 import sys
-from pathlib import Path
 
-import yaml
 
 from promptlab.store import PromptStore
 from promptlab.diff import diff_prompts

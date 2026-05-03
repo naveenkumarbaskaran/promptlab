@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 from promptlab.prompt import Prompt
 from promptlab.store import PromptStore
-from promptlab.abtest import ABTest, metric_length, metric_word_count, metric_exact_match
+from promptlab.abtest import ABTest, metric_word_count, metric_exact_match
 
 
 @pytest.fixture
