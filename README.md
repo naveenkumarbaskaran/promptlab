@@ -11,6 +11,16 @@
 pip install promptlab
 ```
 
+## 🎬 Demo
+
+<p align="center">
+  <img src="assets/demo.gif" alt="promptlab demo — version, diff, and A/B test prompts" width="700">
+  <br>
+  <em>Creating prompts, diffing versions, running A/B tests, and promoting the winner to production</em>
+</p>
+
+---
+
 ## The Problem
 
 Your prompts are the most important code you write, but you manage them as raw strings:
