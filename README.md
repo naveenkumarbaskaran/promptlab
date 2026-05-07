@@ -1,14 +1,14 @@
 # promptlab
 
-[![PyPI version](https://img.shields.io/pypi/v/promptlab.svg)](https://pypi.org/project/promptlab/)
-[![Python](https://img.shields.io/pypi/pyversions/promptlab.svg)](https://pypi.org/project/promptlab/)
+[![PyPI version](https://img.shields.io/pypi/v/promptlab-ai.svg)](https://pypi.org/project/promptlab-ai/)
+[![Python](https://img.shields.io/pypi/pyversions/promptlab-ai.svg)](https://pypi.org/project/promptlab-ai/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://github.com/naveenkumarbaskaran/promptlab/actions/workflows/ci.yml/badge.svg)](https://github.com/naveenkumarbaskaran/promptlab/actions)
 
 **Git for your prompts.** Version, diff, validate, and A/B test LLM prompts with confidence.
 
 ```
-pip install promptlab
+pip install promptlab-ai
 ```
 
 ## 🎬 Demo
