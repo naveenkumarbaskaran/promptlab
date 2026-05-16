@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <!-- Main background gradient: dark blue → indigo → deep purple -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0a0e27"/>
+      <stop offset="45%"  stop-color="#111638"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <!-- Bottom bar gradient: green → teal → cyan (CLI/git theme) -->
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00c853"/>
+      <stop offset="35%"  stop-color="#00bfa5"/>
+      <stop offset="70%"  stop-color="#00b8d4"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <!-- Dot glow for decorative elements -->
+    <radialGradient id="dotGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#00e5ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Title text gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="60%"  stop-color="#e0f7fa"/>
+      <stop offset="100%" stop-color="#80deea"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid lines (very faint) -->
+  <g stroke="#1e2a4a" stroke-width="1" opacity="0.3">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="450" y1="0" x2="450" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="750" y1="0" x2="750" y2="300"/>
+    <line x1="900" y1="0" x2="900" y2="300"/>
+    <line x1="1050" y1="0" x2="1050" y2="300"/>
+  </g>
+
+  <!-- LEFT decorative: bezier curve with glowing dots -->
+  <g opacity="0.7">
+    <path d="M 20,260 C 60,200 80,150 50,100 C 30,65 70,30 110,50"
+          fill="none" stroke="#00bfa5" stroke-width="1.5" opacity="0.5"/>
+    <!-- Dots along left curve -->
+    <circle cx="22"  cy="255" r="5"  fill="#00e5ff" opacity="0.9"/>
+    <circle cx="42"  cy="210" r="3"  fill="#00bfa5" opacity="0.8"/>
+    <circle cx="72"  cy="168" r="6"  fill="#00e5ff" opacity="0.7"/>
+    <circle cx="58"  cy="128" r="3"  fill="#26c6da" opacity="0.8"/>
+    <circle cx="40"  cy="90"  r="4"  fill="#00bfa5" opacity="0.7"/>
+    <circle cx="68"  cy="58"  r="5"  fill="#00e5ff" opacity="0.9"/>
+    <circle cx="108" cy="48"  r="3"  fill="#26c6da" opacity="0.7"/>
+    <!-- Glow halos for larger dots -->
+    <circle cx="22"  cy="255" r="12" fill="url(#dotGlow)" opacity="0.4"/>
+    <circle cx="72"  cy="168" r="14" fill="url(#dotGlow)" opacity="0.35"/>
+    <circle cx="68"  cy="58"  r="12" fill="url(#dotGlow)" opacity="0.4"/>
+
+    <!-- Second left curve -->
+    <path d="M 5,180 C 40,155 55,120 35,80 C 20,50 55,20 90,35"
+          fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.25"/>
+    <circle cx="7"   cy="178" r="2.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="38"  cy="148" r="2"   fill="#26c6da" opacity="0.5"/>
+    <circle cx="50"  cy="108" r="3"   fill="#00e5ff" opacity="0.6"/>
+    <circle cx="34"  cy="70"  r="2"   fill="#00bfa5" opacity="0.5"/>
+    <circle cx="65"  cy="35"  r="2.5" fill="#00e5ff" opacity="0.6"/>
+  </g>
+
+  <!-- RIGHT decorative: bezier curve with glowing dots (mirrored) -->
+  <g opacity="0.7">
+    <path d="M 1180,260 C 1140,200 1120,150 1150,100 C 1170,65 1130,30 1090,50"
+          fill="none" stroke="#00bfa5" stroke-width="1.5" opacity="0.5"/>
+    <!-- Dots along right curve -->
+    <circle cx="1178" cy="255" r="5"  fill="#00e5ff" opacity="0.9"/>
+    <circle cx="1158" cy="210" r="3"  fill="#00bfa5" opacity="0.8"/>
+    <circle cx="1128" cy="168" r="6"  fill="#00e5ff" opacity="0.7"/>
+    <circle cx="1142" cy="128" r="3"  fill="#26c6da" opacity="0.8"/>
+    <circle cx="1160" cy="90"  r="4"  fill="#00bfa5" opacity="0.7"/>
+    <circle cx="1132" cy="58"  r="5"  fill="#00e5ff" opacity="0.9"/>
+    <circle cx="1092" cy="48"  r="3"  fill="#26c6da" opacity="0.7"/>
+    <!-- Glow halos -->
+    <circle cx="1178" cy="255" r="12" fill="url(#dotGlow)" opacity="0.4"/>
+    <circle cx="1128" cy="168" r="14" fill="url(#dotGlow)" opacity="0.35"/>
+    <circle cx="1132" cy="58"  r="12" fill="url(#dotGlow)" opacity="0.4"/>
+
+    <!-- Second right curve -->
+    <path d="M 1195,180 C 1160,155 1145,120 1165,80 C 1180,50 1145,20 1110,35"
+          fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.25"/>
+    <circle cx="1193" cy="178" r="2.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="1162" cy="148" r="2"   fill="#26c6da" opacity="0.5"/>
+    <circle cx="1150" cy="108" r="3"   fill="#00e5ff" opacity="0.6"/>
+    <circle cx="1166" cy="70"  r="2"   fill="#00bfa5" opacity="0.5"/>
+    <circle cx="1135" cy="35"  r="2.5" fill="#00e5ff" opacity="0.6"/>
+  </g>
+
+  <!-- Scattered background stars/particles -->
+  <g fill="#ffffff" opacity="0.15">
+    <circle cx="200"  cy="40"  r="1.5"/>
+    <circle cx="340"  cy="80"  r="1"/>
+    <circle cx="480"  cy="25"  r="1.5"/>
+    <circle cx="620"  cy="55"  r="1"/>
+    <circle cx="760"  cy="35"  r="1.5"/>
+    <circle cx="880"  cy="70"  r="1"/>
+    <circle cx="990"  cy="30"  r="1.5"/>
+    <circle cx="170"  cy="200" r="1"/>
+    <circle cx="310"  cy="230" r="1.5"/>
+    <circle cx="460"  cy="260" r="1"/>
+    <circle cx="700"  cy="240" r="1.5"/>
+    <circle cx="840"  cy="210" r="1"/>
+    <circle cx="1020" cy="250" r="1.5"/>
+  </g>
+
+  <!-- Main title: "promptlab" -->
+  <text
+    x="600" y="155"
+    font-family="'SF Mono', 'Fira Code', 'Cascadia Code', monospace"
+    font-size="88"
+    font-weight="700"
+    letter-spacing="-2"
+    text-anchor="middle"
+    fill="url(#titleGrad)"
+  >promptlab</text>
+
+  <!-- Subtitle -->
+  <text
+    x="600" y="200"
+    font-family="'SF Pro Display', 'Segoe UI', 'Inter', system-ui, sans-serif"
+    font-size="21"
+    font-weight="400"
+    letter-spacing="0.5"
+    text-anchor="middle"
+    fill="#90caf9"
+    opacity="0.9"
+  >Version, diff, and A/B test your LLM prompts — like git for prompts</text>
+
+  <!-- Bottom gradient bar -->
+  <rect x="0" y="285" width="1200" height="15" fill="url(#barGrad)" rx="0"/>
+
+  <!-- Thin separator line above bar -->
+  <line x1="0" y1="284" x2="1200" y2="284" stroke="#ffffff" stroke-width="0.5" opacity="0.1"/>
+</svg>
